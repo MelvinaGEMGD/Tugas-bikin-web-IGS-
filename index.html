@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ignatius Global School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo">
+    <img src="assets/logo.png" alt="IGS">
+    <span>Ignatius Global School</span>
+  </div>
+<nav>
+  <ul class="menu">
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#karier">Karier</a></li>
+    <li><a href="https://moodle.igs.my.id" target="_blank">Moodle IGS</a></li>
+
+    
+    <li><a href="#ppdb">PPDB</a></li>
+
+
+    <li><a href="#adminitrasi">Administrasi</a></li>
+    <li><a href="#berita">Berita</a></li>
+  </ul>
+</nav>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- ================= BANNER ================= -->
+  <section class="banner">
+    <div class="banner-slider">
+
+        <!-- Slide 1 -->
+        <div class="banner-slide active">
+            <video src="video/slide1.mp4" autoplay muted loop></video>
+            <div class="banner-content">
+                <h1>Ignatius Global School</h1>
+                <p>Education for a Better Future</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="banner-slide">
+            <video src="video/slide2.mp4" autoplay muted loop></video>
+            <div class="banner-content">
+                <h1>Prestasi & Karakter</h1>
+                <p>Mencetak generasi unggul</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="banner-slide">
+            <video src="video/slide3.mp4" autoplay muted loop></video>
+            <div class="banner-content">
+                <h1>Fasilitas Modern</h1>
+                <p>Lingkungan belajar terbaik</p>
+            </div>
+        </div>
+
+        <!-- Navigasi -->
+        <button class="banner-nav prev"></button>
+        <button class="banner-nav next"></button>
+
+    </div>
+</section>
+
+<!-- ================= BAHASA ASING ================= -->
+<section class="section" id="Karier">
+<div class="asa">
+    <h2>- Karrier</h2>
+
+</div><div class="container12">
+    <div class="card12">
+        <h2>Lowongan Pekerjaan</h2>
+
+        <form>
+            <div class="input-group">
+                <input type="text" required>
+                <label>Nama</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" required>
+                <label>Ingin berkerja sebagai</label>
+            </div>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</div>
+</section>
+<!-- ================= PROFILE ====================== -->
+<section class="profile-section">
+    <h2>Profil IGS</h2>
+    <p class="subtitle">Pilih kategori profil</p>
+
+    <!-- Opsi -->
+    <div class="profile-tabs">
+        <button class="tab active" data-target="karyawan">Karyawan</button>
+        <button class="tab" data-target="staff">Staff</button>
+        <button class="tab" data-target="murid">Murid</button>
+        <button class="tab" data-target="osis">OSIS</button>
+        <button class="tab" data-target="alumni">Alumni</button>
+    </div>
+
+    <!-- Konten -->
+    <div class="profile-content">
+
+        <!-- Karyawan -->
+        <div class="profile-group active" id="karyawan">
+            <div class="profile-card">
+                <img src="img/karyawan1.jpg">
+                <h4>Budi Santoso</h4>
+                <p>Jabatan: Kepala Sekolah</p>
+                <span>Tahun Bekerja: 2015</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/karyawan2.jpg">
+                <h4>Sri Wahyuni</h4>
+                <p>Jabatan: Wakil Kepala</p>
+                <span>Tahun Bekerja: 2017</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/karyawan3.jpg">
+                <h4>Ahmad Fauzi</h4>
+                <p>Jabatan: Guru Senior</p>
+                <span>Tahun Bekerja: 2018</span>
+            </div>
+        </div>
+
+        <!-- Staff -->
+        <div class="profile-group" id="staff">
+            <div class="profile-card">
+                <img src="img/staff1.jpg">
+                <h4>Dina Lestari</h4>
+                <p>Administrasi</p>
+                <span>Tahun Bekerja: 2019</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/staff2.jpg">
+                <h4>Rizal Akbar</h4>
+                <p>IT Support</p>
+                <span>Tahun Bekerja: 2020</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/staff3.jpg">
+                <h4>Putri Amelia</h4>
+                <p>Keuangan</p>
+                <span>Tahun Bekerja: 2021</span>
+            </div>
+        </div>
+
+        <!-- Murid -->
+        <div class="profile-group" id="murid">
+            <div class="profile-card">
+                <img src="img/murid1.jpg">
+                <h4>Andi Pratama</h4>
+                <p>Tahun Masuk: 2023</p>
+                <span>Hobi: Basket</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/murid2.jpg">
+                <h4>Siti Aisyah</h4>
+                <p>Tahun Masuk: 2022</p>
+                <span>Hobi: Membaca</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/murid3.jpg">
+                <h4>Raka Putra</h4>
+                <p>Tahun Masuk: 2024</p>
+                <span>Hobi: Coding</span>
+            </div>
+        </div>
+
+        <!-- OSIS -->
+        <div class="profile-group" id="osis">
+            <div class="profile-card">
+                <img src="img/osis1.jpg">
+                <h4>Kevin Arya</h4>
+                <p>Jabatan: Ketua OSIS</p>
+                <span>Periode: 2024–2025</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/osis2.jpg">
+                <h4>Nabila Putri</h4>
+                <p>Jabatan: Wakil Ketua</p>
+                <span>Periode: 2024–2025</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/osis3.jpg">
+                <h4>Farhan Ilham</h4>
+                <p>Jabatan: Sekretaris</p>
+                <span>Periode: 2024–2025</span>
+            </div>
+        </div>
+
+        <!-- Alumni -->
+        <div class="profile-group" id="alumni">
+            <div class="profile-card">
+                <img src="img/alumni1.jpg">
+                <h4>Rahmawati</h4>
+                <p>Tahun Masuk: 2018</p>
+                <span>Universitas: UI</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/alumni2.jpg">
+                <h4>Agus Salim</h4>
+                <p>Tahun Masuk: 2017</p>
+                <span>Pekerjaan: Software Engineer</span>
+            </div>
+            <div class="profile-card">
+                <img src="img/alumni3.jpg">
+                <h4>Lina Marlina</h4>
+                <p>Tahun Masuk: 2019</p>
+                <span>Universitas: UGM</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PBDB ================= -->
+
+<section class="ppdb-input" id="ppdb">
+    <h2>Form Pendaftaran Siswa Baru</h2>
+    <p class="subtitle">Ignatius Global School</p>
+
+    <form id="formPPDB">
+        <table class="ppdb-table">
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <select required>
+                        <option value="">-- Pilih --</option>
+                        <option>Laki-laki</option>
+                        <option>Perempuan</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tempat Lahir</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" required></td>
+            </tr>
+
+            <tr>
+                <td>Asal Sekolah</td>
+                <td><input type="text" required></td>
+            </tr>
+
+            <tr>
+                <td>Pilihan Jurusan</td>
+                <td>
+                    <select required>
+                        <option value="">-- Pilih Jurusan --</option>
+                        <option>IPA</option>
+                        <option>IPS</option>
+                        <option>Bahasa</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td><textarea required></textarea></td>
+            </tr>
+
+            <tr>
+                <td>No HP</td>
+                <td><input type="tel" required></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" required></td>
+            </tr>
+        </table>
+
+        <button type="submit" class="btn-daftar">Daftar Sekarang</button>
+    </form>
+</section>
+<!-- ================= ADMINITRASI================= -->
+
+<section class="administrasi-section" id="adminitrasi">
+    <h2>Administrasi</h2>
+    <p class="subtitle">Layanan Administrasi Ignatius Global School</p>
+
+    <div class="admin-container">
+
+        <div class="admin-card">
+            <div class="admin-icon">📄</div>
+            <h4>PPDB Online</h4>
+            <p>Pendaftaran siswa baru secara online dan mudah.</p>
+            <a href="#ppdb" class="admin-btn">Lihat</a>
+        </div>
+
+        <div class="admin-card">
+            <div class="admin-icon">💳</div>
+            <h4>Pembayaran Sekolah</h4>
+            <p>Informasi dan panduan pembayaran biaya sekolah.</p>
+            <a href="#" class="admin-btn">Detail</a>
+        </div>
+
+        <div class="admin-card">
+            <div class="admin-icon">📝</div>
+            <h4>Surat Menyurat</h4>
+            <p>Pengajuan surat keterangan dan administrasi siswa.</p>
+            <a href="#" class="admin-btn">Ajukan</a>
+        </div>
+
+        <div class="admin-card">
+            <div class="admin-icon">📊</div>
+            <h4>Data Akademik</h4>
+            <p>Informasi nilai, raport, dan administrasi akademik.</p>
+            <a href="#" class="admin-btn">Buka</a>
+        </div>
+
+    </div>
+</section>
+<!-- ================= B ASING ================= -->
+
+<section class="bahasa-section" id="bahasa">
+  <div class="bahasa-container">
+    <h2 class="section-title">Bahasa Asing</h2>
+    <p class="section-subtitle">
+      Program pembelajaran bahasa asing bersama guru profesional IGS
+    </p>
+
+    <div class="bahasa-grid">
+      <!-- Card 1 -->
+      <div class="bahasa-card reveal">
+        <img src="img/guru-inggris.jpg" alt="Guru Bahasa Inggris">
+        <div class="bahasa-content">
+          <h3>Bahasa Inggris</h3>
+          <span>Mr. Bilal</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bahasa-card reveal">
+        <img src="img/guru-mandarin.jpg" alt="Guru Bahasa Mandarin">
+        <div class="bahasa-content">
+          <h3>Bahasa Mandarin</h3>
+          <span>Ms.</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bahasa-card reveal">
+        <img src="img/guru-jepang.jpg" alt="Guru Bahasa Jepang">
+        <div class="bahasa-content">
+          <h3>Bahasa Jepang</h3>
+          <span>Mr. </span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bahasa-card reveal">
+        <div class="gamabar"></div>
+        <div class="bahasa-content">
+          <h3>Bahasa Korea</h3>
+          <span>Ms.</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bahasa-card reveal">
+        <img src="img/guru-jerman.jpg" alt="Guru Bahasa Jerman">
+        <div class="bahasa-content">
+          <h3>Bahasa Coding</h3>
+          <span>Mr. Ilham</span>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bahasa-card reveal">
+        <img src="img/guru-prancis.jpg" alt="Guru Bahasa Prancis">
+        <div class="bahasa-content">
+          <h3>Bahasa Prancis</h3>
+          <span>Ms. </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= KETUA YAYASAN ================= -->
+<section class="section highlight">
+  <img src="assets/guru/yayasan.jpg">
+  <div>
+    <h2>Ketua Yayasan</h2>
+    <p>
+      Ignatius Global School berkomitmen mencetak generasi unggul,
+      berkarakter, dan berdaya saing global.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRESTASI ================= -->
+<section class="section">
+  <section class="presentasi-section" id="presentasi">
+  <div class="presentasi-container">
+    <h2 class="section-title">Presentasi IGS</h2>
+    <p class="section-subtitle">
+      Dokumentasi kegiatan presentasi, seminar, dan program unggulan Ignatius Global School
+    </p>
+
+    <div class="presentasi-grid">
+      <!-- Card 1 -->
+      <div class="presentasi-card reveal">
+        <div class="gamabar">.</div>
+        <div class="presentasi-content">
+          <h3>Presentasi Akademik</h3>
+          <p>Pemaparan hasil pembelajaran dan proyek siswa unggulan.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="presentasi-card reveal">
+        <div class="gamabar">.</div>
+        <div class="presentasi-content">
+          <h3>Seminar Pendidikan</h3>
+          <p>Kegiatan seminar untuk meningkatkan kualitas akademik.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="presentasi-card reveal">
+        <div class="gamabar">.</div>
+        <div class="presentasi-content">
+          <h3>Karya & Inovasi Siswa</h3>
+          <p>Presentasi ide kreatif dan inovatif dari siswa IGS.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- ================= BERITA ================= -->
+<section class="section" id="berita">
+  <section class="berita-section" id="berita">
+  <div class="berita-container">
+    <h2 class="section-title">Berita Terbaru</h2>
+    <p class="section-subtitle">
+      Informasi dan update terbaru seputar kegiatan Ignatius Global School
+    </p>
+
+    <div class="berita-grid">
+      <!-- Card 1 -->
+      <div class="berita-card reveal">
+        <div class="gamabar"></div>
+        <div class="berita-content">
+          <span class="berita-date">12 Mei 2026</span>
+          <h3>Siswa IGS Raih Juara Olimpiade</h3>
+          <p>Siswa Ignatius Global School berhasil meraih prestasi tingkat nasional.</p>
+          <a href="berita-detail.html" class="btn-berita">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="berita-card reveal">
+        <div class="gamabar"></div>
+        <div class="berita-content">
+          <span class="berita-date">08 Mei 2026</span>
+          <h3>Kegiatan Seminar Pendidikan</h3>
+          <p>IGS mengadakan seminar untuk meningkatkan kualitas pembelajaran.</p>
+          <a href="berita-detail.html" class="btn-berita">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="berita-card reveal">
+        <div class="gamabar"></div>
+        <div class="berita-content">
+          <span class="berita-date">01 Mei 2026</span>
+          <h3>Peringatan Hari Pendidikan Nasional</h3>
+          <p>Upacara dan rangkaian kegiatan dalam rangka Hardiknas. Kegiatan terus berjalan lancar</p>
+          <a href="berita-detail.html" class="btn-berita">Baca Selengkapnya</a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="berita-card reveal">
+        <div class="gamabar"></div>
+        <div class="berita-content">
+          <span class="berita-date">28 April 2026</span>
+          <h3>Penerimaan Siswa Baru Dibuka</h3>
+          <p>Pendaftaran siswa baru tahun ajaran terbaru telah dibuka. Silakan segara daftar!</p>
+          <a href="berita-detail.html" class="btn-berita">Baca Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+</section>
+
+<!-- ================= KRITIK SARAN ================= -->
+<section class="section">
+  
+<div class="container12">
+    <div class="card12">
+        <h2>Kritik & Saran</h2>
+        <p>Kami sangat menghargai masukan dari Anda</p>
+
+        <form>
+            <div class="input-group">
+                <input type="text" required>
+                <label>Nama</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <textarea rows="4" required></textarea>
+                <label>Pesan</label>
+            </div>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</div>
+</section>
+
+<!-- ================= INFORMAI ================= -->
+<section class="igs-gallery">
+    <h2>Galeri Informasi IGS</h2>
+    <p class="subtitle">Kegiatan & Fasilitas Ignatius Global School</p>
+
+    <div class="gallery-grid">
+        <div class="gallery-card">
+            <img src="img/igs1.jpg" alt="IGS 1">
+        </div>
+        <div class="gallery-card">
+            <img src="img/igs2.jpg" alt="IGS 2">
+        </div>
+       <div class="gallery-card">
+            <img src="img/igs2.jpg" alt="IGS 2">
+        </div>
+        
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightboxImg">
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo & Nama -->
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Ignatius Global School">
+            <h3>Ignatius Global School</h3>
+        </div>
+
+        <!-- Kontak -->
+        <div class="footer-info">
+            <p><strong>Email:</strong> highschool.igs@gmail.com</p>
+            <p><strong>Telp:</strong> 0877-9000-7105</p>
+            <p><strong>Alamat:</strong> Palembang</p>
+        </div>
+
+        <!-- Sosial Media -->
+        <div class="footer-social">
+            <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="tt"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+    </div>
+</footer>
+
+  <script>
+
+    
+const slides = document.querySelectorAll('.banner-slide');
+const nextBtn = document.querySelector('.banner-nav.next');
+const prevBtn = document.querySelector('.banner-nav.prev');
+
+let index = 0;
+
+function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[i].classList.add('active');
+
+    // restart video
+    const video = slides[i].querySelector('video');
+    video.currentTime = 0;
+    video.play();
+}
+
+const tabs = document.querySelectorAll('.tab');
+const groups = document.querySelectorAll('.profile-group');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        groups.forEach(g => g.classList.remove('active'));
+        document.getElementById(tab.dataset.target).classList.add('active');
+    });
+});
+
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealOnScroll = () => {
+    reveals.forEach(card => {
+      const cardTop = card.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (cardTop < windowHeight - 100) {
+        card.classList.add('active');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+
+
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+
+
+  }
+
+  
+
+document.getElementById("formPPDB").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Pendaftaran berhasil! Data Anda telah tersimpan.");
+    this.reset();
+});
+
+function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+/* auto slide 5 detik */
+setInterval(nextSlide, 5000);
+
+  
+  function showProfile(id) {
+  document.querySelectorAll('.slider').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+} 
+  function toggleDropdown() {
+  document.getElementById("profilMenu").classList.toggle("show");
+}
+
+function togglePPDB() {
+  document.getElementById("ppdbMenu").classList.toggle("show");
+}
+
+const galleryCards = document.querySelectorAll('.gallery-card img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const closeBtn = document.querySelector('.close');
+
+galleryCards.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    lightbox.style.display = "none";
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.style.display = "none";
+    }
+});
+
+document.addEventListener("click", function (e) {
+  if (!e.target.closest(".dropdown")) {
+    document.querySelectorAll(".dropdown-menu").forEach(menu => {
+      menu.classList.remove("show");
+    });
+  }
+
+});
+</script>
+</body>
+</html>
